@@ -1,7 +1,5 @@
-# BudgetTracker
-# Modern Budget Tracker
-
-A comprehensive personal finance management web application with advanced features for tracking expenses, managing income, and analyzing spending patterns.
+# Budget Tracker
+Modern web application for personal finance management with advanced features for expense tracking, income management, and spending pattern analysis.
 
 ## Features
 
@@ -16,132 +14,131 @@ A comprehensive personal finance management web application with advanced featur
 - Set and modify monthly budget targets
 - Real-time budget tracking
 - Remaining budget calculator
-- Visual indicators for budget status
-- Automated budget notifications
+- Graphic indicator for the status of budgets
+- Auto-sent notifications regarding budgets
 
-### 3. Transaction Management
-#### Income Tracking
-- Multiple income categories:
+3. Transaction management
+#### Incoming income management
+- Variety in categories:
   - Salary
   - Freelance
   - Investments
   - Business
-  - Other
-- Date-based income recording
-- Income categorization
-
-#### Expense Tracking
-- Comprehensive expense categories:
-  - Groceries
-  - Utilities
-  - Rent
-  - Entertainment
-  - Transport
-  - Medical
-  - Food
-  - Fashion
-  - Other
+  - Others
+Recording based on the date of receipts
+Category into incoming money and money made and earned from them
+#### Income Expenditure Management
+Detailed expenditure category, which can also be stated below
+- Foodstuff
+- Utilities
+- Rent
+- Entertainment
+- Transport
+- Medical
+- Food
+- Fashion
+- Others
 - Date-stamped expense recording
-- Category-based organization
+- Category-based filing
 
 ### 4. Data Visualization
-- Interactive pie charts for:
-  - Expense distribution by category
-  - Income distribution by source
-- Color-coded transaction history
-- Real-time chart updates
-- Responsive design for various screen sizes
+- Interactive pie charts on:
+  - Distribution of expenses by category
+  - Distribution of income by source
+- Color-coded history of transactions
+- Real time updating of charts
+- Responsive design and display for multiple screens
 
-### 5. Calendar Integration
+### 5. Calendar View
 - Monthly calendar view
-- Daily transaction summaries
-- Visual indicators for days with transactions
-- Quick navigation between months
-- Detailed daily breakdown of:
+- Summary of daily transactions
+- Visual indications for days that have had transactions
+- Easy navigation from one month to another
+- Detailed breakdown on a daily basis for
   - Income transactions
   - Expense transactions
-  - Net daily balance
+- Daily balance in net terms
 
 ### 6. Currency Converter
-- Real-time currency conversion
-- Support for multiple international currencies
-- Integration with Frankfurter API
-- User-friendly conversion interface
-- Saved conversion history
+- Instant currency conversion
+- Multilingual international currencies support
+- API integration from Frankfurter
+- Friendly user interface for conversions
+- Conversion history saves
 
-### 7. Financial Summary
-- Total income tracking
-- Total expenses monitoring
-- Net balance calculation
-- Category-wise breakdowns
-- Historical transaction records
+### 7. Summary
+- Tracks income
+- Tracks expenses
+- Calculates the net balance
+- Category-based analysis
+- Records of historical transactions
 
 ### 8. Theme Customization
-- Light/Dark mode toggle
-- Persistent theme preferences
-- Smooth theme transitions
-- Custom color schemes
-- Responsive design elements
+- Option for Light and Dark mode
+- Persistent preference of theme
+- Smooth transitions in themes
+- Customizable color schemes
+- Responsive elements in design
 
 ### 9. Transaction Management Features
-- Add new transactions
+- New transaction additions
 - Delete existing transactions
-- Edit transaction details
-- Categorize transactions
-- Search and filter capabilities
+- Alter transaction details
+- Categories transactions
+- Search and filter functionality
 
 ### 10. Data Management
-- Local storage integration
-- Data export functionality
-- Automatic data saving
-- Data backup capabilities
-- User data isolation
+- Integration with local storage
+- Export data option
+- Auto saving
+- Capability to backup
+- User data separation
 
 ## Technical Features
 
 ### 1. Responsive Design
-- Mobile-friendly interface
+- Support mobile devices with interface
 - Adaptive layouts
-- Flexible grid system
-- Touch-friendly controls
-- Cross-device compatibility
+- Grid system flexible
+- Controls touch-friendly
+- Cross-device support
 
 ### 2. Modern UI Components
-- Clean, intuitive interface
+- Clean user interface
 - Animated transitions
 - Interactive elements
 - Toast notifications
-- Loading indicators
+- Load indicators
 
 ### 3. Data Visualization
 - Chart.js integration
-- Dynamic data updates
+- Live updates in data
 - Interactive charts
-- Custom color schemes
-- Responsive scaling
+- Custom colors
+- Scale on action taken
 
 ### 4. Form Handling
 - Input validation
 - Error handling
-- Real-time feedback
-- Form reset functionality
+- Feedback
+- Form reset
 - Auto-completion
 
 ### 5. Date Management
-- Flatpickr integration
-- Date selection
-- Calendar navigation
-- Date formatting
-- Time zone handling
+- Flatpickr
+- Selection of dates
+- Navigation to the calendar
+- Formatting
+- Time zones
 
 ## Security Features
 
-1. **User Data Protection**
-   - Secure local storage
-   - Data encryption
-   - Session management
-   - Private user spaces
-   - Secure logout
+1. **Protecting User Data**
+   Secure local storage
+   Encryption
+   Sessions
+   Private spaces for users
+- Safe logout
 
 2. **Input Validation**
    - Form validation
@@ -153,11 +150,11 @@ A comprehensive personal finance management web application with advanced featur
 ## Usage
 
 1. **Getting Started**
-   - Register a new account
-   - Log in to your account
-   - Set your initial budget
-   - Choose preferred theme
-   - Start tracking transactions
+   - New account registration
+   - Logging into your account
+   - Setting your first budget
+   - Preferred theme
+- Start tracking transactions
 
 2. **Adding Transactions**
    - Select transaction type (Income/Expense)
@@ -173,18 +170,18 @@ A comprehensive personal finance management web application with advanced featur
    - Track budget progress
    - Monitor financial goals
 
-4. **Managing Settings**
-   - Toggle theme
+4. **Settings Management**
+   - Switch theme
    - Update budget
-   - Modify categories
+   - Change categories
    - Export data
-   - Customize display
+   - Customize view
 
 ## Technical Requirements
 
 ### Frontend Dependencies
-- Chart.js for data visualization
-- Flatpickr for date picking
+- Chart.js for visualization
+- Flatpickr for date picker
 - Font Awesome for icons
 - Inter font family
 - Modern CSS features
@@ -204,11 +201,11 @@ A comprehensive personal finance management web application with advanced featur
 - Mobile browsers
 
 ## Performance Features
-- Efficient DOM manipulation
-- Optimized asset loading
-- Smooth animations
-- Responsive interactions
-- Fast data processing
+Efficient DOM manipulation
+Optimized asset loading
+Smooth animations
+Responsive interactions
+Fast data processing
 
 ## Future Enhancements
 1. Cloud data synchronization
@@ -223,7 +220,6 @@ A comprehensive personal finance management web application with advanced featur
 10. Automated transaction categorization
 
 ## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Feel free to open a Pull Request.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+License This project is licensed under the MIT License - see the LICENSE file for details.
