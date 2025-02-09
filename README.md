@@ -221,5 +221,3 @@ Fast data processing
 
 ## Contributing
 Contributions are welcome! Feel free to open a Pull Request.
-
-License This project is licensed under the MIT License - see the LICENSE file for details.
