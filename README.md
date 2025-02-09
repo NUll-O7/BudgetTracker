@@ -1,6 +1,12 @@
 # Budget Tracker
 Modern web application for personal finance management with advanced features for expense tracking, income management, and spending pattern analysis.
 
+Budget Tracker is a modern web application for personal finance management that offers advanced features for expense tracking, income management, and spending pattern analysis. It features user authentication, secure login, password protection, personalized data storage, automatic data persistence across sessions, and seamless logout functionality. Users can set and modify monthly budget targets, track income, and manage transactions. The application also provides detailed expenditure categories, including food, utilities, rent, entertainment, transport, medical, food, and fashion. Data visualization is available, with interactive pie charts and color-coded history of transactions.
+
+The calendar view provides a monthly summary of daily transactions, while the currency converter offers instant currency conversion and multilingual international currencies support. The summary track income, expenses, and net balance, while the theme customization allows for light and dark mode. Transaction management features include new transaction additions, deletion of existing transactions, and search and filter functionality. Data management includes integration with local storage, export data option, auto saving, and user data separation.
+
+The application is designed to be responsive, support mobile devices, and features a clean user interface, animated transitions, interactive elements, and form handling. It also supports date management and has security features such as secure local storage, encryption, sessions, private spaces for users, and safe logout. The application is compatible with various browsers and has performance features such as efficient DOM manipulation, optimized asset loading, smooth animations, responsive interactions, and fast data processing. Future enhancements include cloud data synchronization, multiple account management, advanced reporting features, budget goal setting, financial insights and analytics, mobile app development, social sharing capabilities, custom category creation, receipt scanning, and automated transaction categorization.
+
 ## Features
 
 ### 1. User Authentication
