@@ -100,6 +100,8 @@ Detailed expenditure category, which can also be stated below
 - Capability to backup
 - User data separation
 
+The project attempted to combine various modern web development technologies and best practices into one application. These included frontend development using HTML5, CSS3, JavaScript, ES6, external libraries (Chart.js, Flatpickr, Font Awesome), and the integration of API. User authentication, design patterns, and more development tools that include version control, Git workflow, and the browser developer tool were covered by the project. Data management and local storage are also covered together with JSON serialization/deserialization and cache management. It had mobile-first approach and fluid layouts and also ensured cross-browser compatibility. Besides that, performance optimization and testing along with the UI/UX principles were addressed. Some key takeaways would include the acquisition of advanced concepts of JavaScript; complete DOM manipulation knowledge; complete knowledge on integrating APIs, use of local storage, data persistence techniques; updating dynamic UI updates and state management. Soft skills included problem solving, project organization, user experience consideration, performance optimization, and documentation practices. The project provided valuable insights into building full-feature web applications.
+
 # Tools and Technologies Learned During Project Development
 
 ## 1. Frontend Development
