@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Budget Tracker</title>
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Required Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header fade-in">
+            <h1>Personal Budget Tracker</h1>
+        </div>
+
+        <!-- Main Dashboard -->
+        <div class="dashboard">
+            <!-- Budget Card -->
+            <div class="card fade-in">
+                <div class="card-header">
+                    <h2><i class="fas fa-wallet mr-2"></i>  Monthly Budget</h2>
+                </div>
+                <div class="form-group">
+                    <br>
+                    <br>
+                    <label for="budgetAmount">Set Budget Amount ($)</label>
+                    <div class="input-group">
+                        <span class="input-group-text"></span>
+                        <input type="number" id="budgetAmount" class="form-control" placeholder="Enter amount">
+                    </div>
+                </div>
+                <div class="px-6 pb-6">
+                    <button id="setBudget" class="btn btn-primary w-full">
+                        <i class="fas fa-check mr-2"></i>Set Budget
+                    </button>
+                </div>
+                <div class="summary-card">
+                    <div>
+                        <h3>Current Budget</h3>
+                        <p id="currentBudget">$0.00</p>
+                    </div>
+                    <div>
+                        <h3>Remaining</h3>
+                        <p id="remainingBudget">$0.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transaction Card -->
+            <div class="card fade-in">
+                <div class="card-header">
+                    <h2><i class="fas fa-exchange-alt mr-2"></i>     Add Transaction</h2>
+                </div>
+                <br>
+                <form id="expenseForm">
+                    <div class="form-group">
+                        <label for="transactionType">Transaction Type</label>
+                        <select id="transactionType" class="form-control" required>
+                            <option value="expense">Expense</option>
+                            <option value="income">Income</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="expenseTitle">Title</label>
+                        <input type="text" id="expenseTitle" class="form-control" required placeholder="Enter title">
+                    </div>
+                    <div class="form-group">
+                        <label for="expenseAmount">Amount($)</label>
+                        <div class="input-group">
+                            <span class="input-group-text"></span>
+                            <input type="number" id="expenseAmount" class="form-control" required placeholder="Enter amount">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="expenseCategory">Category</label>
+                        <select id="expenseCategory" class="form-control" required>
+                            <option value="groceries">Groceries</option>
+                            <option value="utilities">Utilities</option>
+                            <option value="rent">Rent</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="transport">Transport</option>
+                            <option value="medical">Medical</option>
+                            <option value="food">Food</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="expenseDate">Date</label>
+                        <input type="text" id="expenseDate" class="form-control" required>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <button type="submit" class="btn btn-primary w-full">
+                            <i class="fas fa-plus mr-2"></i>Add Transaction
+                        </button>
+                        <br>
+                        <br><br>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Currency Converter Card -->
+            <div class="card special-card fade-in" style="background-color: var(--background-color);">
+                <div class="card-header">
+                    <h2><i class="fas fa-money-bill-wave mr-2"></i> Currency Converter</h2>
+                </div>
+                <div class="currency-converter">
+                    <div class="form-group">
+                        <label for="fromCurrency">From</label>
+                        <select id="fromCurrency" class="form-control"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="toCurrency">To</label>
+                        <select id="toCurrency" class="form-control"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <button id="convertCurrency" class="btn btn-primary w-full">
+                            <i class="fas fa-exchange-alt mr-2"></i>Convert
+                        </button>
+                    </div>
+                    <div id="conversionResult" class="text-center">0.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transaction List -->
+        <div class="card fade-in">
+            <div class="card-header">
+                <h2><i class="fas fa-list mr-2"></i>Recent Transactions</h2>
+            </div>
+            <div class="expense-list" id="expenseList"></div>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-container">
+            <div class="card fade-in">
+                <div class="card-header">
+                    <h2><i class="fas fa-chart-pie mr-2"></i>Financial Overview</h2>
+                </div>
+                <div class="charts-grid">
+                    <div class="chart-wrapper">
+                        <h3>Expense Breakdown</h3>
+                        <canvas id="expenseChart"></canvas>
+                    </div>
+                    <div class="chart-wrapper">
+                        <h3>Income Breakdown</h3>
+                        <canvas id="incomeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar -->
+        <div class="card fade-in">
+            <div class="card-header">
+                <h2><i class="fas fa-calendar mr-2"></i>Calendar View</h2>
+            </div>
+            <div class="calendar-view">
+                <div class="calendar-header">
+                    <div class="calendar-navigation">
+                        <button class="btn btn-primary" id="prevMonth">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h3 id="currentMonth"></h3>
+                        <button class="btn btn-primary" id="nextMonth">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+                <div class="daily-summary" id="dailySummary"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
